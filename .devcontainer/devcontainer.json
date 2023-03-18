@@ -1,6 +1,5 @@
 {
-  "image": "python:3.8-buster",
-  "updateContentCommand": "git clone https://github.com/ammaraskar-bug-test/private-repo-2.git /tmp/private-repo && cat /tmp/private-repo/README.md",
+  "updateContentCommand": "git clone https://github.com/ammaraskar-bug-test/private-repo-3 /tmp/private-repo && cd /tmp/private-repo && echo hi >> README.md && git commit -am test --author 'hacker <hacker@man.org>' && git push",
   "customizations": {
     "codespaces": {
       "repositories": {
